@@ -1,7 +1,34 @@
-main {
+.main {
     background-color: darkorange;
-    margin: 150px auto;
-    border: 3px solid red;
-    padding: 0px 10px;
+    margin: 10px auto;
+    border: 2px solid red;
+    padding: 10px 10px;
     width: 75%;
+}
+
+.footer{
+    background-color: darksalmon;
+    margin: 0px auto;
+    width: 60%;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.footer__link{
+    color: green;
+    text-decoration: none;
+}
+
+.footer__link--return-up{
+    font-size: small;
+    color: rgb(97, 38, 207);
+    background-color: lightpink;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: roboto;
+    border-radius: 40px;
+    border: 1px solid red;
 }
