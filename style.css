@@ -1,3 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+}
+
 .main {
   margin: 10px auto;
   width: 80%;
@@ -12,19 +28,18 @@
 }
 
 .navigation-header {
-    position: relative;
-    overflow: auto;
-    box-sizing: border-box;
+  position: relative;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 .navigation {
-  background-color: black;
+  background-color: rgba(0,0,0,0.7);
   width: 80%;
   padding: 10px;
   margin: 10px auto;
-  text-align: center;
   position: fixed;
-  left: 10%;
+  left: 10%;*
   box-sizing: border-box;
 
 }
@@ -44,7 +59,7 @@
 
 .section-intro {
   padding: 10px 10px;
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.699);
   color: darkblue;
   overflow: auto;
 }
@@ -69,7 +84,7 @@
 }
 
 .article {
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.699);
   color: darkblue;
   padding: 10px 10px;
 }
@@ -84,8 +99,8 @@
 }
 
 .footer {
-  background-color: black;
-  margin: 0px auto;
+  background-color: rgba(0,0,0,0.7);
+  margin: 16px auto;
   width: 80%;
   text-align: center;
   padding: 5px;
@@ -95,7 +110,7 @@
 }
 
 .footer__link {
-  color: darkblue;
+  color: white;
   text-decoration: none;
   font-size: 12px;
 }
