@@ -1,15 +1,56 @@
-const name = "Konrad Walenrod";
-const age = "24";
+//const name = "Konrad Walenrod";
+//const age = 10;
 
 //alert(`Cześć i czołem, nazywam się ${name}, mam ${age} lat/a.`);
 //console.log(`Poprawka: dzień dobry, nazywam się ${name}, mam ${age} lat/a.`);
 
-newAutoHeader = document.querySelector(".auto-fill-header");
-newAutoParagraph = document.querySelector(".auto-fill-pragraph");
-console.log(newAutoHeader);
-console.log(newAutoParagraph);
+newAutoHeader = document.querySelector(".article__header--js");
+newAutoParagraph = document.querySelector(".article__paragraph--js");
+//console.log(newAutoHeader);
+//console.log(newAutoParagraph);
 newAutoHeader.innerHTML = '"Non Stop"- Brian W. Aldiss';
 newAutoParagraph.innerHTML =
   "Plemię Roya Complaina żyje w Pokładach porośniętych wybujałą i dziką roślinnością, walcząc o przetrwanie w nieprzyjaznym świecie. Wrogami są inne plemiona ludzi, flora i fauna. Istnieją też dalsze zagrożenia – mityczni Ludzie z Dziobu, legendarni Giganci czy przerażający Obcy.";
-console.log(newAutoHeader);
-console.log(newAutoParagraph);
+//console.log(newAutoHeader);
+//console.log(newAutoParagraph);
+
+//funkcje
+
+const myAge = 38;
+const myName = "Antonio";
+
+const randomPerson = {
+  firstName: 'Antonio',
+  secondName: 'Banderas',
+  age: 45,
+  isAlive: true,
+  placeOfBirth: 'Malaga',
+  sing: (song) =>{
+    console.log(`I,m singing a song:${song}`)
+  },
+  wife: {
+    name: 'Salma',
+    surname: 'Hayek',
+    age: 40,
+  },
+}
+
+function greetOne(myName, myAge) {
+  console.log(
+    `Returned by standard definition: My name is ${myName} and I am ${myAge} years old.`
+  );
+}
+
+const greetTwo = (myName, myAge) => {
+  console.log(
+    `Returned by (fat) arrow definition: My name is ${myName} and I am ${myAge} years old.`
+  );
+};
+
+greetOne(myName, myAge);
+greetTwo(myName, myAge);
+
+//greet with data from object
+greetTwo(randomPerson.firstName, randomPerson.age);
+greetTwo(randomPerson.wife.name, randomPerson.wife.age);
+greetOne(randomPerson['firstName'], randomPerson['age'])
