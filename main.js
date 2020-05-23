@@ -1,3 +1,4 @@
+/*
 //const name = "Konrad Walenrod";
 //const age = 10;
 
@@ -72,6 +73,7 @@ if (myVariable == 4) {
 }
 
 //console.log(typeof [])
+*/
 
 //obsługa hamburger menu
 
