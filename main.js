@@ -54,3 +54,22 @@ greetTwo(myName, myAge);
 greetTwo(randomPerson.firstName, randomPerson.age);
 greetTwo(randomPerson.wife.name, randomPerson.wife.age);
 greetOne(randomPerson['firstName'], randomPerson['age'])
+
+
+console.log('')
+console.log('')
+console.log('************ T Y D Z I E Ń  V I ************')
+
+myVariable = 13
+
+if (myVariable == 4) {
+  console.log('po prostu IF')
+} else if (myVariable == 8) {
+  console.log('piersze ELSE IF')
+} else if (myVariable == 12) {
+  console.log('drugie ELSE IF!')
+} else {
+  console.log('nic nie znalazłem:(')
+}
+
+//console.log(typeof [])
