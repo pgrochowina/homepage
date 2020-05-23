@@ -33,13 +33,21 @@ body {
   display: none;
 }
 
-.navigation--open{
+.navigation--open {
   display: block;
 }
 
 .navigation__link {
   display: block;
   margin-bottom: 16px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: none;
+  background: none;
 }
 
 .section-intro {
@@ -116,6 +124,10 @@ body {
 }
 
 @media screen and (min-width: 720px) {
+  .hamburger {
+    display: none;
+  }
+
   .navigation {
     background-color: rgba(0, 0, 0, 0.7);
     width: 80%;

@@ -20,20 +20,20 @@ const myAge = 38;
 const myName = "Antonio";
 
 const randomPerson = {
-  firstName: 'Antonio',
-  secondName: 'Banderas',
+  firstName: "Antonio",
+  secondName: "Banderas",
   age: 45,
   isAlive: true,
-  placeOfBirth: 'Malaga',
-  sing: (song) =>{
-    console.log(`I,m singing a song:${song}`)
+  placeOfBirth: "Malaga",
+  sing: (song) => {
+    console.log(`I,m singing a song:${song}`);
   },
   wife: {
-    name: 'Salma',
-    surname: 'Hayek',
+    name: "Salma",
+    surname: "Hayek",
     age: 40,
   },
-}
+};
 
 function greetOne(myName, myAge) {
   console.log(
@@ -53,23 +53,32 @@ greetTwo(myName, myAge);
 //greet with data from object
 greetTwo(randomPerson.firstName, randomPerson.age);
 greetTwo(randomPerson.wife.name, randomPerson.wife.age);
-greetOne(randomPerson['firstName'], randomPerson['age'])
+greetOne(randomPerson["firstName"], randomPerson["age"]);
 
+console.log("");
+console.log("");
+console.log("************ T Y D Z I E Ń  V I ************");
 
-console.log('')
-console.log('')
-console.log('************ T Y D Z I E Ń  V I ************')
-
-myVariable = 13
+myVariable = 13;
 
 if (myVariable == 4) {
-  console.log('po prostu IF')
+  console.log("po prostu IF");
 } else if (myVariable == 8) {
-  console.log('piersze ELSE IF')
+  console.log("piersze ELSE IF");
 } else if (myVariable == 12) {
-  console.log('drugie ELSE IF!')
+  console.log("drugie ELSE IF!");
 } else {
-  console.log('nic nie znalazłem:(')
+  console.log("nic nie znalazłem:(");
 }
 
 //console.log(typeof [])
+
+//obsługa hamburger menu
+
+const hamburger = document.querySelector(".hamburger--js");
+//console.log(hamburger);
+
+hamburger.addEventListener("click", () => {
+  const navigationEvent = document.querySelector(".navigation--js");
+  navigationEvent.classList.toggle("navigation--open");
+});
