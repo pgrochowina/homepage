@@ -164,4 +164,15 @@ body {
   .navigation__link--last-one {
     border-right: none;
   }
+
+  .section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .section__header{
+    grid-area: 1 / 1 / 2 / 3;
+  }
 }
