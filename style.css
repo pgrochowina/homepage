@@ -15,10 +15,8 @@ body {
 }
 
 .main {
-  margin: 0px auto;
-  width: 80%;
   display: block;
-  background: hotpink;
+  margin-top: 60px;
 }
 
 .navigation-header {
@@ -28,10 +26,11 @@ body {
   display: block;
   top: 0;
   width: 100%;
+  background: black;
 }
 
 .navigation {
-  background-color: white;
+  background-color: black;
   padding: 16px;
   display: none;
 }
@@ -44,19 +43,29 @@ body {
   display: block;
   margin-bottom: 16px;
   font-style: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
 }
 
 .hamburger {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 11px;
+  right: 7px;
   border: none;
   background: none;
+  font-size: 32px;
+}
+
+.main__header {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 16px;
+  color: darkblue;
 }
 
 .section-intro {
   padding: 10px 10px;
-  background-color: rgba(173, 216, 230, 0.699);
   color: darkblue;
   overflow: auto;
 }
@@ -68,6 +77,7 @@ body {
 
 .section-intro__header {
   font-family: Arial, Helvetica, sans-serif;
+  color: darkblue;
 }
 
 .section-intro_image {
@@ -78,10 +88,10 @@ body {
 .section__header {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+  color: darkblue;
 }
 
 .article {
-  background-color: rgba(173, 216, 230, 0.699);
   color: darkblue;
   padding: 10px 10px;
 }
@@ -96,9 +106,7 @@ body {
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 16px auto;
-  width: 80%;
+  background-color: rgb(0, 0, 0);
   text-align: center;
   padding: 5px;
   font-family: "Courier New", Courier, monospace;
@@ -141,6 +149,7 @@ body {
     left: 10%;
     display: flex;
     justify-content: center;
+    align-content: center;
   }
 
   .navigation__link {
