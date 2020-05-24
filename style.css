@@ -20,7 +20,6 @@ body {
 }
 
 .navigation-header {
-  background: white;
   min-height: 60px;
   position: fixed;
   display: block;
@@ -140,16 +139,16 @@ body {
     display: none;
   }
 
+  .navigation-header{
+    display: flex;
+    align-items: center;
+  }
+
   .navigation {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 80%;
-    padding: 10px;
     margin: 0px auto;
-    position: fixed;
-    left: 10%;
+    padding: 0px;
     display: flex;
     justify-content: center;
-    align-content: center;
   }
 
   .navigation__link {
@@ -159,12 +158,17 @@ body {
     font-family: "Courier New", Courier, monospace;
     text-decoration: none;
     border-right: 1px solid white;
+    margin: 0px;
   }
 
   .navigation__link--last-one {
     border-right: none;
   }
 
+  .section-intro{
+    width: 75%;
+    margin: 0 auto;
+  }
   .section{
     display: grid;
     grid-template-columns: 1fr 1fr;
