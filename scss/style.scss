@@ -1,20 +1,26 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 .body {
   background-color: #ffe53b;
   background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
   background-repeat: no-repeat;
-  display: block; }
+  display: block;
+}
 
 .main {
   display: block;
-  margin-top: 60px; }
+  margin-top: 60px;
+}
+
+//NAVIGATION
 
 .navigation {
   min-height: 60px;
@@ -22,21 +28,27 @@ html {
   display: block;
   top: 0;
   width: 100%;
-  background: black; }
-  .navigation__area {
+  background: black;
+  &__area {
     background-color: black;
     padding: 16px;
-    display: none; }
-  .navigation__link {
+    display: none;
+  }
+  &__link {
     display: block;
     margin-bottom: 16px;
     font-style: none;
     color: white;
     font-family: "Courier New", Courier, monospace;
-    text-decoration: none; }
+    text-decoration: none;
+  }
+}
+
+//HAMBURGER
 
 .navigation--open {
-  display: block; }
+  display: block;
+}
 
 .hamburger {
   position: absolute;
@@ -44,56 +56,81 @@ html {
   right: 7px;
   border: none;
   background: none;
-  font-size: 32px; }
+  font-size: 32px;
+}
 
-.main__header {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  padding-top: 16px;
-  color: darkblue; }
+//MAIN
+
+.main {
+  &__header {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    padding-top: 16px;
+    color: darkblue;
+  }
+}
+
+//SECTION INTRO
 
 .section-intro {
   padding: 10px 10px;
   color: darkblue;
-  overflow: auto; }
-  .section-intro__paragraph {
+  overflow: auto;
+  &__paragraph {
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif; }
-  .section-intro__header {
     font-family: Arial, Helvetica, sans-serif;
-    color: darkblue; }
-  .section-intro__image {
+  }
+  &__header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+  }
+  &__image {
     float: left;
-    padding-right: 10px; }
+    padding-right: 10px;
+  }
+}
 
-.section__header {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  color: darkblue; }
+//SECTION
+
+.section {
+  &__header {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: darkblue;
+  }
+}
+
+//ARTICLE
 
 .article {
   color: darkblue;
-  padding: 10px 10px; }
-  .article__header {
-    font-family: Arial, Helvetica, sans-serif; }
-  .article__paragraph {
+  padding: 10px 10px;
+  &__header {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  &__paragraph {
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+//FOOTER
 
 .footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   text-align: center;
   padding: 5px;
   font-family: "Courier New", Courier, monospace;
   color: white;
-  box-sizing: border-box; }
-  .footer__paragraph {
-    font-size: 12px; }
-  .footer__link {
+  box-sizing: border-box;
+  &__paragraph {
+    font-size: 12px;
+  }
+  &__link {
     color: white;
     text-decoration: none;
-    font-size: 12px; }
-    .footer__link--return-up {
+    font-size: 12px;
+    &--return-up {
       font-size: small;
       color: black;
       background-color: white;
@@ -101,38 +138,56 @@ html {
       display: inline-block;
       margin-top: 10px;
       font-family: "Courier New", Courier, monospace;
-      font-size: 12px; }
+      font-size: 12px;
+    }
+  }
+}
 
 @media screen and (min-width: 720px) {
   .hamburger {
-    display: none; }
+    display: none;
+  }
+
+  //NAVIGATION
+
   .navigation {
     display: flex;
-    align-items: center; }
-    .navigation__area {
+    align-items: center;
+    &__area {
       margin: 0px auto;
       padding: 0px;
       display: flex;
-      justify-content: center; }
-    .navigation__link {
+      justify-content: center;
+    }
+    &__link {
       padding-right: 5px;
       padding-left: 5px;
       color: white;
       font-family: "Courier New", Courier, monospace;
       text-decoration: none;
       border-right: 1px solid white;
-      margin: 0px; }
-      .navigation__link--last-one {
-        border-right: none; }
-      .navigation__link__:hover {
-        background-color: #16af3c; }
+      margin: 0px;
+      &--last-one {
+        border-right: none;
+      }
+      &__:hover {
+        background-color: rgb(22, 175, 60);
+      }
+    }
+  }
+
   .section-intro {
     width: 40%;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
+
   .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-    row-gap: 16px; }
-    .section__header {
-      grid-area: 1 / 1 / 2 / 3; } }
+    row-gap: 16px;
+    &__header {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+  }
+}
