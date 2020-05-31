@@ -132,14 +132,46 @@ html {
 
 .table {
   border: 1px solid #a2a9b1;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  font-family: sans-serif;
+  color: black;
+  width: 250px; }
   .table__header {
     border: 1px solid #a2a9b1;
-    background-color: #E5D8C0; }
+    background-color: #E5D8C0;
+    font-size: 14.28px; }
     .table__header--pl {
-      display: block; }
-      .table__header--pl--en {
-        display: block; }
+      display: block;
+      padding: 4px; }
+    .table__header--en {
+      display: block;
+      font-weight: normal;
+      font-style: italic;
+      padding: 4px; }
+  .table__cell-left {
+    padding: 4px;
+    font-size: 11.9px;
+    background: #eeeeee;
+    display: table-cell;
+    display: table-cell;
+    line-height: 1.6;
+    vertical-align: top; }
+  .table__cell-right {
+    padding: 4px;
+    font-size: 11.9px;
+    width: 50%;
+    line-height: 1.6;
+    vertical-align: top; }
+    .table__cell-right--red {
+      color: #BA0000; }
+  .table__subheader {
+    border: 1px solid #a2a9b1;
+    background-color: #E5D8C0;
+    padding: 4px;
+    font-size: 11.9px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center; }
 
 @media screen and (min-width: 720px) {
   .hamburger {
