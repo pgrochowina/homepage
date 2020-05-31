@@ -166,6 +166,13 @@ html {
   }
 }
 
+//TABLE
+
+.table{
+  border: 1px solid #a2a9b1;
+  border-collapse: collapse;
+}
+
 @media screen and (min-width: 720px) {
   .hamburger {
     display: none;

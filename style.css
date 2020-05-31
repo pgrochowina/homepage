@@ -124,6 +124,10 @@ html {
       font-family: "Courier New", Courier, monospace;
       font-size: 12px; }
 
+.table {
+  border: 1px solid #a2a9b1;
+  border-collapse: collapse; }
+
 @media screen and (min-width: 720px) {
   .hamburger {
     display: none; }
