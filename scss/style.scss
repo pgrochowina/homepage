@@ -167,10 +167,21 @@ html {
 }
 
 //TABLE
+$borderStyle: 1px solid #a2a9b1; 
+
+.debug-container{
+  background: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
 
 .table{
-  border: 1px solid #a2a9b1;
+  border: $borderStyle;
   border-collapse: collapse;
+  &__header{
+    border: $borderStyle;
+  }
 }
 
 @media screen and (min-width: 720px) {

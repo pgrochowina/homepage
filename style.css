@@ -124,9 +124,17 @@ html {
       font-family: "Courier New", Courier, monospace;
       font-size: 12px; }
 
+.debug-container {
+  background: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center; }
+
 .table {
   border: 1px solid #a2a9b1;
   border-collapse: collapse; }
+  .table__header {
+    border: 1px solid #a2a9b1; }
 
 @media screen and (min-width: 720px) {
   .hamburger {
