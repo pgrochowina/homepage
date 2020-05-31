@@ -134,7 +134,12 @@ html {
   border: 1px solid #a2a9b1;
   border-collapse: collapse; }
   .table__header {
-    border: 1px solid #a2a9b1; }
+    border: 1px solid #a2a9b1;
+    background-color: #E5D8C0; }
+    .table__header--pl {
+      display: block; }
+      .table__header--pl--en {
+        display: block; }
 
 @media screen and (min-width: 720px) {
   .hamburger {

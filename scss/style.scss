@@ -168,6 +168,7 @@ html {
 
 //TABLE
 $borderStyle: 1px solid #a2a9b1; 
+$headreBackground: #E5D8C0;
 
 .debug-container{
   background: white;
@@ -181,6 +182,13 @@ $borderStyle: 1px solid #a2a9b1;
   border-collapse: collapse;
   &__header{
     border: $borderStyle;
+    background-color: $headreBackground;
+    &--pl{
+      display: block;
+    &--en{
+      display: block;
+    }
+    }
   }
 }
 
