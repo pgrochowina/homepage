@@ -215,6 +215,13 @@ $headreBackground: #E5D8C0;
     &--red{
       color: #BA0000;
     }
+    &--link{
+      text-decoration: none;
+      color: #0645ad;
+      &:visited{
+        color:#0b0080;
+      }
+    }   
   }
   &__subheader{
     border: $borderStyle;

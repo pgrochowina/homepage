@@ -164,6 +164,11 @@ html {
     vertical-align: top; }
     .table__cell-right--red {
       color: #BA0000; }
+    .table__cell-right--link {
+      text-decoration: none;
+      color: #0645ad; }
+      .table__cell-right--link:visited {
+        color: #0b0080; }
   .table__subheader {
     border: 1px solid #a2a9b1;
     background-color: #E5D8C0;
